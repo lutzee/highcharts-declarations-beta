@@ -23,5 +23,6 @@
   "homepage": "https://github.com/highcharts/highcharts-declarations-beta#readme",
   "dependencies": {
     "highcharts": "^6.2.0"
-  }
+  },
+  "types": "highcharts.d.ts"
 }
