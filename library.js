@@ -9,7 +9,11 @@ const definitionPath = process.cwd();
 const definitionPattern = '.d.ts';
 const targetPath = process.env.INIT_CWD;
 const nodeModulesPath = path.join(targetPath, 'node_modules');
-const highchartsPath = path.join(nodeModulesPath, 'highcharts');
+const bowerModulesPAth = path.join(targetPath, 'bower_components'
+let highchartsPath = path.join(nodeModulesPath, 'highcharts');
+if(!highchartsPath) {
+    highchartsPAth = path.join(bowerModulesPath, 'highcharts');
+}
 
 function endsWith(str, pattern) {
     return (str.lastIndexOf(pattern) === (str.length - pattern.length));
@@ -54,6 +58,7 @@ module.exports = {
     definitionPattern: definitionPattern,
     highchartsPath: highchartsPath,
     nodeModulesPath: nodeModulesPath,
+    bowerModulesPath: bowerModulesPath,
     targetPath: targetPath,
     // functions
     endsWith: endsWith,
