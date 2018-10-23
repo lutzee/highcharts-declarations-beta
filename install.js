@@ -10,6 +10,9 @@ function install(definitionPath, definitionPattern, highchartsPath) {
     try {
 
         const packagePath = path.join(highchartsPath, 'package.json');
+        
+        console.info(packagePath);
+
         if (!fs.existsSync(packagePath)) {
             throw new Error(
                 'Highcharts v6 not found.'
