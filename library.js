@@ -9,7 +9,7 @@ const definitionPath = process.cwd();
 const definitionPattern = '.d.ts';
 const targetPath = process.cwd();
 const nodeModulesPath = path.join(targetPath, 'node_modules');
-const bowerModulesPAth = path.join(targetPath, 'bower_components');
+const bowerModulesPath = path.join(targetPath, 'bower_components');
 let highchartsPath = path.join(nodeModulesPath, 'highcharts');
 if(!highchartsPath) {
     highchartsPAth = path.join(bowerModulesPath, 'highcharts');
