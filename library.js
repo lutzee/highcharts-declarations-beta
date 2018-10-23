@@ -7,7 +7,7 @@ const path = require('path');
 
 const definitionPath = process.cwd();
 const definitionPattern = '.d.ts';
-const targetPath = process.env.INIT_CWD;
+const targetPath = process.cwd();
 const nodeModulesPath = path.join(targetPath, 'node_modules');
 const bowerModulesPAth = path.join(targetPath, 'bower_components');
 let highchartsPath = path.join(nodeModulesPath, 'highcharts');
