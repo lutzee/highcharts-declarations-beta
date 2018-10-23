@@ -7,7 +7,7 @@ const path = require('path');
 
 const definitionPath = process.cwd();
 const definitionPattern = '.d.ts';
-const targetPath = process.env.INIT_CWD;
+var targetPath = process.env.INIT_CWD;
 if(!targetPath) {
     targetPath = process.cwd() + '../../../..';
 }
